@@ -1,3 +1,5 @@
+const path = require('path');
+
 module.exports = {
   entry: [
     './src/index.js'
@@ -8,7 +10,7 @@ module.exports = {
     filename: 'bundle.js'
   },
   module: {
-    loaders: [{
+    rules: [{
       exclude: /node_modules/,
       loader: 'babel-loader'
     }]
